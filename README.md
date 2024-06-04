@@ -44,10 +44,16 @@ O Github é uma das plataformas clássicas de armazenamento e de versionamento d
 - git push -u origin main
 
 ## Comandos avançados
+| Aulas | Resumos |
+| ----- | --------|
+| Gravando  alterações no repositório local | [Resumos]
+| git clone URL nome-do-diretorio-local | clonar repositório |
+| git clone URL --branch feature-1 --single-branch | aaa |
+| git remote -v | aaa |
+| git status | aaa |
+| git touch README.md | aaa |
+| git log | aaa |
 
-- git clone URL nome-do-diretorio-local
-- git clone URL --branch feature-1 --single-branch
-- git remote -v
 
 ## Comandos iniciais do terminal
 
@@ -55,4 +61,3 @@ O Github é uma das plataformas clássicas de armazenamento e de versionamento d
 - ls
 - cat config
 - mkdir
-
