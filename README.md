@@ -36,22 +36,24 @@ O Github é uma das plataformas clássicas de armazenamento e de versionamento d
 
 ## Comandos iniciais
 
-- git init
-- git add .
-- git commit -m "first commit"
-- git branch -M main
-- git remote add origin link_of_the_repo
-- git push -u origin main
+| Comando | Explicação |
+| ----- | --------|
+| git init | iniciar no github |
+| git add . | adiciona todos os arquivos ao repositório | 
+| git branch -M main | coloca a branch main como a branch de trabalho principal |
+| git commit -m "messagem de commit" | adiciona uma mensagem que fala sobre o trabalho feito no repositório |
+| git remote add origin link_do_repositório | adiciona o link do repositório ao projeto |
+| git push -u origin main | faz upload de todos os arquivos na branch e no repositório indicados |
+| git pull -u origin main | fazer download de todos os arquivos com as atualizações das linhas trabalhadas por você ou outra pessoa em outro computador/máquina de trabalho |
 
 ## Comandos avançados
-| Aulas | Resumos |
+| Comando | Explicação |
 | ----- | --------|
-| Gravando  alterações no repositório local | [Resumos]
 | git clone URL nome-do-diretorio-local | clonar repositório |
 | git clone URL --branch feature-1 --single-branch | aaa |
-| git remote -v | aaa |
-| git status | aaa |
-| git touch README.md | aaa |
+| git remote -v | descobre qual o link/nome do repositório remoto |
+| git status | verifica o status do repositório |
+| git touch README.md | abre o arquivo README.md e pode ser usado para abrir outros arquivos |
 | git log | aaa |
 
 
@@ -61,3 +63,4 @@ O Github é uma das plataformas clássicas de armazenamento e de versionamento d
 - ls
 - cat config
 - mkdir
+
