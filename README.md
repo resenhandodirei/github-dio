@@ -55,6 +55,17 @@ O Github é uma das plataformas clássicas de armazenamento e de versionamento d
 | git status | verifica o status do repositório |
 | git touch README.md | abre o arquivo README.md e pode ser usado para abrir outros arquivos |
 | git log | aaa |
+| git reset | |
+| git reset soft | |
+| git reset hard | |
+| git stash | |
+| git checkout NOMEDABRANCH | | 
+| git checkout -b NOMEDABRANCH | |
+| git branch | |
+| git merge | | 
+| git merge branch | |
+| git fetch | |
+
 
 
 ## Comandos iniciais do terminal
