@@ -73,6 +73,7 @@ O Github é uma das plataformas clássicas de armazenamento e de versionamento d
 | git branch -M main | coloca a branch main como a branch de trabalho principal |
 | git commit -m "messagem de commit" | adiciona uma mensagem que fala sobre o trabalho feito no repositório |
 | git remote add origin link_do_repositório | adiciona o link do repositório ao projeto |
+| git remote remove origin | remove o remote origin configurado inicialmente | 
 | git push -u origin main | faz upload de todos os arquivos na branch e no repositório indicados |
 | git push --force | faz upload de todos os arquivos na branch e no repositório indicados a força |
 | git pull -u origin main | fazer download de todos os arquivos com as atualizações das linhas trabalhadas por você ou outra pessoa em outro computador/máquina de trabalho |
