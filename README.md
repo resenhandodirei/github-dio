@@ -13,10 +13,9 @@ O Github é uma das plataformas clássicas de armazenamento e de versionamento d
 - git config --global --list 
 
 ## Comandos de visualização das configurações 
-- git config user.name "digite aqui seu username"
-- git config user.email "digite aqui seu e-mail"
-- git config init.defaultBranch
-- git config --global credential.helper
+- git config --global --list
+- git config --list
+- gh repo view
 - cat .gitconfig
 - cat .git-credentials
 
@@ -49,23 +48,23 @@ O Github é uma das plataformas clássicas de armazenamento e de versionamento d
 ## Comandos avançados
 | Comando | Explicação |
 | ----- | --------|
-| git clone URL nome-do-diretorio-local | clonar repositório |
-| git clone URL --branch feature-1 --single-branch | aaa |
-| git remote -v | descobre qual o link/nome do repositório remoto |
-| git status | verifica o status do repositório |
-| git touch README.md | abre o arquivo README.md e pode ser usado para abrir outros arquivos |
-| git log | aaa |
-| git reset | |
-| git reset soft | |
-| git reset hard | |
-| git stash | |
-| git checkout NOMEDABRANCH | | 
-| git checkout -b NOMEDABRANCH | |
-| git branch | |
-| git merge | | 
-| git merge branch | |
-| git fetch | |
-
+| git clone URL nome-do-diretorio-local	| Clona o repositório na URL especificada para o diretório local com o nome fornecido.|
+| git clone URL --branch feature-1 --single-branch	| Clona o repositório na URL especificada, mas apenas a branch feature-1.|
+| git remote -v	| Mostra as URLs de todos os repositórios remotos configurados para o repositório local.|
+| git status	| Exibe o status atual do repositório, mostrando mudanças nos arquivos, arquivos não rastreados, entre outras informações.|
+| touch README.md |	Cria um arquivo vazio chamado README.md no diretório atual. Nota: Este comando é do Unix, não do Git.|
+| git log	| Exibe o histórico de commits do repositório.|
+| git reset	| Reseta o índice (área de staging) e a árvore de trabalho para o estado do último commit. Existem três tipos de reset: --soft, --mixed (padrão), e --hard. |
+| git reset --soft	| Mantém as mudanças no índice e na árvore de trabalho, mas desfaz os commits, permitindo que você re-commit as mudanças.
+| git reset --mixed |	Reseta o índice, mas mantém as mudanças na árvore de trabalho. Esta é a opção padrão se nenhuma outra for especificada.
+| git reset --hard	| Reseta o índice e a árvore de trabalho para o estado do último commit, descartando todas as mudanças.
+| git stash	| Armazena temporariamente as mudanças na área de trabalho que ainda não foram commitadas, permitindo que você volte a um estado de trabalho limpo.
+| git checkout NOMEDABRANCH |	Muda para a branch especificada.
+| git checkout -b NOMEDABRANCH	| Cria uma nova branch com o nome especificado e muda para essa branch.
+| git branch	| Lista todas as branches locais no repositório.
+| git merge	| Combina mudanças de uma branch com outra.
+| git merge branch	| Faz merge das mudanças da branch especificada para a branch atual.
+| git fetch |	Baixa objetos e referências de outro repositório.
 
 
 ## Comandos iniciais do terminal
