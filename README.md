@@ -5,6 +5,37 @@
 
 O Github é uma das plataformas clássicas de armazenamento e de versionamento de código, concomitantemente ao lado do Gitlab e do Azure Repos.
 
+## Comandos iniciais do terminal
+- cd 
+- ls
+- cat config
+- mkdir
+
+## Quadro de comandos iniciais do terminal com explicação
+
+| Comando | Explicação |
+| ----- | --------|
+|  cd diretório | 	Muda para o diretório especificado.
+|  cd ..	| Sobe um nível na hierarquia de diretórios (diretório pai).
+|  cd ~	|  Vai para o diretório home do usuário.
+|  cd -	|  Vai para o último diretório acessado.
+|  pwd	| Mostra o caminho do diretório atual (print working directory).
+|  ls	| Lista o conteúdo do diretório atual.
+| ls -l	|  Lista o conteúdo do diretório atual com informações detalhadas (long format).
+|  ls -a	| Lista todos os arquivos, incluindo os ocultos.
+|  mkdir nome-do-diretório	| Cria um novo diretório com o nome especificado.
+|  rmdir nome-do-diretório	| Remove um diretório vazio.
+| rm nome-do-arquivo	| Remove o arquivo especificado.
+|  rm -r nome-do-diretório	| Remove um diretório e seu conteúdo recursivamente.
+|  touch nome-do-arquivo | Cria um novo arquivo vazio ou atualiza a data e hora de um arquivo existente.
+|  cp arquivo destino	| Copia um arquivo para o destino especificado.
+| cp -r diretório destino | 	Copia um diretório e seu conteúdo para o destino especificado.
+| mv arquivo destino	| Move ou renomeia um arquivo para o destino especificado.
+| mv diretório destino	| Move ou renomeia um diretório para o destino especificado.
+| cat arquivo	| Mostra o conteúdo de um arquivo.
+| nano arquivo	| Abre o editor de texto nano para editar o arquivo especificado.
+| clear	| Limpa a tela do terminal.
+
 ## Comandos de configuração
 - git config 
 - git config --global init.defaultBranch main
@@ -43,7 +74,9 @@ O Github é uma das plataformas clássicas de armazenamento e de versionamento d
 | git commit -m "messagem de commit" | adiciona uma mensagem que fala sobre o trabalho feito no repositório |
 | git remote add origin link_do_repositório | adiciona o link do repositório ao projeto |
 | git push -u origin main | faz upload de todos os arquivos na branch e no repositório indicados |
+| git push --force | faz upload de todos os arquivos na branch e no repositório indicados a força |
 | git pull -u origin main | fazer download de todos os arquivos com as atualizações das linhas trabalhadas por você ou outra pessoa em outro computador/máquina de trabalho |
+| git pull --force | fazer download de todos os arquivos com as atualizações das linhas trabalhadas por você ou outra pessoa em outro computador/máquina de trabalho a força |
 
 ## Comandos avançados
 | Comando | Explicação |
@@ -67,10 +100,4 @@ O Github é uma das plataformas clássicas de armazenamento e de versionamento d
 | git fetch |	Baixa objetos e referências de outro repositório.
 
 
-## Comandos iniciais do terminal
-
-- cd 
-- ls
-- cat config
-- mkdir
 
