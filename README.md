@@ -79,6 +79,13 @@ O Github é uma das plataformas clássicas de armazenamento e de versionamento d
 | git pull -u origin main | fazer download de todos os arquivos com as atualizações das linhas trabalhadas por você ou outra pessoa em outro computador/máquina de trabalho |
 | git pull --force | fazer download de todos os arquivos com as atualizações das linhas trabalhadas por você ou outra pessoa em outro computador/máquina de trabalho a força |
 
+## O que são mensagens padrões ()?
+
+| Mensagem | Explicação |
+| ----- | --------|
+| feat/feature | funcionalidade |
+| fix | consertar |
+
 ### O que é PR?
 
 Um **Pull Request (PR)** é um termo usado em sistemas de controle de versão, como Git, para descrever o processo pelo qual um desenvolvedor solicita que suas alterações no código sejam revisadas e potencialmente integradas ao repositório principal de um projeto. O processo de PR é uma parte crucial da colaboração e revisão de código em projetos de software, especialmente em ambientes de desenvolvimento colaborativos.
