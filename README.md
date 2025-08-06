@@ -1,4 +1,5 @@
 
+
 # Quick guide on Github according to my studies on the DIO platform
 
 # Guia rápido sobre o Github de acordo com meus estudos na plataforma DIO
@@ -43,6 +44,8 @@ O Github é uma das plataformas clássicas de armazenamento e de versionamento d
 - git config --global user.name "digite aqui seu e-mail"
 - git config --global --list 
 
+
+
 ## Comandos de visualização das configurações 
 - git config --global --list
 - git config --list
@@ -69,6 +72,7 @@ O Github é uma das plataformas clássicas de armazenamento e de versionamento d
 | Comando | Explicação |
 | ----- | --------|
 | git init | iniciar no github |
+| git add --all | adiciona todos os arquivos ao repositório | 
 | git add . | adiciona todos os arquivos ao repositório | 
 | git branch -M main | coloca a branch main como a branch de trabalho principal |
 | git commit -m "messagem de commit" | adiciona uma mensagem que fala sobre o trabalho feito no repositório |
@@ -78,6 +82,9 @@ O Github é uma das plataformas clássicas de armazenamento e de versionamento d
 | git push --force | faz upload de todos os arquivos na branch e no repositório indicados a força |
 | git pull -u origin main | fazer download de todos os arquivos com as atualizações das linhas trabalhadas por você ou outra pessoa em outro computador/máquina de trabalho |
 | git pull --force | fazer download de todos os arquivos com as atualizações das linhas trabalhadas por você ou outra pessoa em outro computador/máquina de trabalho a força |
+| git status | saber o estado dos arquivos do repositório que pode estar no working, no staging ou no commit |
+| git log | é um comando no sistema de controle de versão Git que exibe o histórico de commits de um repositório. Ele mostra informações como o autor, a data, a mensagem e o identificador único (hash) de cada commit, permitindo que você acompanhe as alterações feitas no projeto ao longo do tempo. |
+| git log --oneline | é um comando no sistema de controle de versão Git que exibe o histórico de commits de um repositório em uma única linha. |
 
 ## O que são mensagens padrões ()?
 
@@ -146,17 +153,28 @@ Pull Requests são uma prática essencial no desenvolvimento moderno de software
 | git status	| Exibe o status atual do repositório, mostrando mudanças nos arquivos, arquivos não rastreados, entre outras informações.|
 | touch README.md |	Cria um arquivo vazio chamado README.md no diretório atual. Nota: Este comando é do Unix, não do Git.|
 | git log	| Exibe o histórico de commits do repositório.|
+| git log -p	| Exibe o histórico de commits do repositório em detalhes |
 | git reset	| Reseta o índice (área de staging) e a árvore de trabalho para o estado do último commit. Existem três tipos de reset: --soft, --mixed (padrão), e --hard. |
 | git reset --soft	| Mantém as mudanças no índice e na árvore de trabalho, mas desfaz os commits, permitindo que você re-commit as mudanças.
 | git reset --mixed |	Reseta o índice, mas mantém as mudanças na árvore de trabalho. Esta é a opção padrão se nenhuma outra for especificada.
-| git reset --hard	| Reseta o índice e a árvore de trabalho para o estado do último commit, descartando todas as mudanças.
+| git reset --hard	| Reseta o índice e a árvore de trabalho para o estado do último commit, descartando todas as mudanças. |
 | git stash	| Armazena temporariamente as mudanças na área de trabalho que ainda não foram commitadas, permitindo que você volte a um estado de trabalho limpo.
 | git checkout NOMEDABRANCH |	Muda para a branch especificada.
 | git checkout -b NOMEDABRANCH	| Cria uma nova branch com o nome especificado e muda para essa branch.
-| git branch	| Lista todas as branches locais no repositório.
+| git branch	| Lista todas as branches locais no repositório. |
+| git switch	| Altera a branch trabalhada. |
 | git merge	| Combina mudanças de uma branch com outra.
 | git merge branch	| Faz merge das mudanças da branch especificada para a branch atual.
-| git fetch |	Baixa objetos e referências de outro repositório.
+| git fetch |	Baixa objetos e referências de outro repositório. |
+| git commit -a -m | Leva um arquivo do working para o commit, sem precisar passar pelo staging. |
+| git commit -am | Leva um arquivo do working para o commit, sem precisar passar pelo staging. |
+| git rn nome_do_arquivo | Exclui o arquivo do diretório no staged. |
+| git restore nome_do_arquivo | Restaura o arquivo excluído do diretório no staged. |
+| git mv nome_do_arquivo nome_do_arquivo_mudado | Renomeia o arquivo |
+| git commit -m "mensagem aqui" --amend | Alterar a mensagem do commit, sem gerar outro commit |
+| git alias | é um atalho personalizado para um comando ou uma sequência de comandos Git. Ele permite que você crie seus próprios comandos, mais curtos e fáceis de lembrar, para executar operações comuns do Git, economizando tempo e esforço ao evitar a digitação repetida de comandos longos. |
+
+
 
 
 
