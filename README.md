@@ -1,8 +1,6 @@
 
 
-# Quick guide on Github according to my studies on the DIO platform
-
-# Guia rápido sobre o Github de acordo com meus estudos na plataforma DIO
+# Guia rápido sobre o Github de acordo com meus estudos na plataforma DIO e fora dela
 
 O Github é uma das plataformas clássicas de armazenamento e de versionamento de código, concomitantemente ao lado do Gitlab e do Azure Repos.
 
@@ -45,14 +43,12 @@ O Github é uma das plataformas clássicas de armazenamento e de versionamento d
 - git config --global --list 
 
 
-
 ## Comandos de visualização das configurações 
 - git config --global --list
 - git config --list
 - gh repo view
 - cat .gitconfig
 - cat .git-credentials
-
 
 ## Autenticação via Token 
 - git config --global credential.helper store
@@ -86,12 +82,42 @@ O Github é uma das plataformas clássicas de armazenamento e de versionamento d
 | git log | é um comando no sistema de controle de versão Git que exibe o histórico de commits de um repositório. Ele mostra informações como o autor, a data, a mensagem e o identificador único (hash) de cada commit, permitindo que você acompanhe as alterações feitas no projeto ao longo do tempo. |
 | git log --oneline | é um comando no sistema de controle de versão Git que exibe o histórico de commits de um repositório em uma única linha. |
 
-## O que são mensagens padrões ()?
+## O que são mensagens padrões?
 
 | Mensagem | Explicação |
 | ----- | --------|
 | feat/feature | funcionalidade |
-| fix | consertar |
+| fix | correção de bug |
+| docs | mudança na documentação |
+| style | formatação, ponto e vírgula, nada que mude o código |
+| refactor | refatoração de código que não corrige bug nem adiciona feature |
+
+## Como corrigir o envio de submódulo?
+
+1. **Remover a referência do Git**:
+Primeiro, removemos o vínculo do submódulo do índice do Git, sem apagar os arquivos físicos:
+    ```sh
+    git rm --cached nome_da_pasta
+    ```
+
+2. **Apagar o histórico interno (.git)**:
+Para que a pasta deixe de ser um repositório independente, precisamos deletar a pasta oculta .git de dentro dela.
+    ```sh
+    Remove-Item -Recurse -Force nome_da_pasta\.git
+    ```
+
+3. **Adicionar como pasta normal**:
+Agora que a pasta é um diretório comum, basta adicioná-la ao seu repositório principal e realizar o commit:
+    ```sh
+    git add nome_da_pasta
+    git commit -m "feat: converte submódulo em pasta comum"
+    ```
+4. **Padronizar a Branch Principal**:
+Caso ainda não tenha definido sua branch como main, utilize o comando abaixo para garantir a compatibilidade com os padrões atuais do GitHub:
+    ```sh
+    git branch -M main
+    git push origin main
+    ```
 
 ### O que é PR?
 
